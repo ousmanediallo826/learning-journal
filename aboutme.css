@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Nippo;
+    src: url('./Nippo-Variable.ttf');
+}
+
+body {
+    font-family: Nippo, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25em 1.5em;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.journal-log h2 {
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+.journal-items {
+    display: flex;
+    gap: 1.5em;
+    font-size: 1.5rem;
+}
+
+.journal-items a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    transition: color 0.3s ease-in-out;
+}
+
+.journal-items a:hover {
+    color: #007bff;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-menu img {
+    width: 35px;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .journal-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 1.5em;
+        background: white;
+        padding: 1em;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .journal-items.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+/*====================
+About Me Styling
+===================== */
+main {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.head-container {
+    display: flex;
+   gap: 3em;
+   margin-top: 3em;
+}
+.head-container img {
+    max-width: 600px;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.head-container h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+.head-container p {
+    font-size: 1.4rem;
+    color: #8a817c;
+    font-weight: 400;
+}
+
+.social-icons ul li {
+    width: 50px;
+    margin-left: 30px;
+}
+.social-icons ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.social-icons {
+    margin-top: 5em;
+}
+.content-container {
+    margin-top: 6em;
+}
+.content-container h2, p {
+    margin: 1em 0;
+}
+.content-container h2 {
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px #c4fff9;
+}
+.content-container p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px #8a817c;
+    font-weight: 300;
+}
+
+@media (min-width: 800px)  and (max-width: 900px){
+    main {
+        margin: 0 2em;
+    }
+}
+
+@media (max-width: 780px){
+    .head-container {
+        display: block;
+        
+    }
+    main {
+        max-width: 650px;
+        text-align: center;
+    }
+    .head-container h1 {
+        margin-top: 1em;
+    }
+    .social-icons {
+        margin-bottom: 2em;
+    }
+    .content-container h2 {
+        text-transform: capitalize;
+    }
+}
+@media (max-width: 500px){
+    main {
+        max-width: 500px;
+        margin: 0 1em;
+    }
+    .head-container h1 {
+        font-size: 1.7rem;
+    }
+    .head-container p {
+        font-size: 0.8rem;
+    }
+    .content-container h2 {
+        font-size: 1.2rem;
+    }
+    .content-container {
+        margin-top: 0;
+    }
+    .content-container p {
+        font-size: 0.8rem;
+    }
+    .social-icons ul li {
+        width: 30px;
+        
+    }
+    .social-icons {
+        margin-top: 1em;
+    }
+    .social-icons ul {
+        margin-left: -30px;
+    }
+}

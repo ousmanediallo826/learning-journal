@@ -115,7 +115,9 @@ Hero Styling Section
 }
 .hero-info p {
     font-size: 1.6rem;
+    margin-left: 0;
     max-width: 800px;
+    text-shadow: 2px 2px 2px #007bff;
 }
 
 @media (max-width: 460px){
@@ -123,8 +125,9 @@ Hero Styling Section
         font-size: 1.5rem;
         text-shadow: 3px 3px 3px black;
     }
-    .hero-info p {
+    .hero-info .first-p {
         font-size: 1rem;
+        
     }
     .hero-info span {
         color: #007bff;
@@ -144,7 +147,7 @@ Blog Posts
     width: 100%;
     max-width: 100%;
     margin: 4em auto;
-    border: 1px solid red;
+    
     
 }
 
@@ -160,12 +163,15 @@ Blog Posts
 
 .blog-post-grid span , p, h3{
     align-self: self-start;
-    margin: 0.62em 45px;
+    margin: 0.4em 45px;
 }
 .blog-post-grid h3 {
     color: #007bff;
 }
-.blog-post-grid span, p {
+.blog-post-grid span {
+    margin-top:1em ;
+}
+.blog-post-grid span, .second-paragraph {
     color: #6d6875;
 }
 
@@ -222,6 +228,24 @@ button {
     }
 }
 
+
+/*=========================
+Footer Styling
+
+=================================*/
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 10em;
+    background-color: #333;
+    padding: 3em 0;
+    color: #fff;
+}
+footer h4 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
 
 
 
